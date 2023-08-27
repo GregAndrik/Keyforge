@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7rem;
+    font-size: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-accent: #0056b3;
+    --color-tint: #007bff;
+    --color-white: #fff;
+    --color-grey: #ccc;
+    --color-grey-dark: #555;
+    --color-dark: #0e1220;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+
+    --container-width-md: 90%;
+}
+
+body {
+    background-color: var(--color-dark);
+}
+
+.container {
+    width: 40rem;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    box-shadow: 0px 3px 10px var(--color-tint);
+    border: 1px solid var(--color-grey);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.primary-button {
+    background-color: var(--color-tint);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.primary-button:hover {
+    background-color: var(--color-accent);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+    .generator-container,
+    .directives-container {
+        width: var(--container-width-md);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .primary-button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 317px) {
+    * {
+        font-size: 0.8rem;
+    }
+
+    .subtitle p {
+        font-size: 0.9rem;
+    }
+
+    .column {
+        width: 47%; 
+    }
+
+    .button-container {
+        gap: 0.5rem; 
+    }
 }
