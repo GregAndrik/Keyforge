@@ -76,8 +76,7 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.primary-button:hover {
-    background-color: var(--color-accent);
+.primary-button:active {
     transform: scale(1.05);
 }
 
@@ -88,9 +87,19 @@ body {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .primary-button:hover {
+        background-color: var(--color-accent);
+    }
+}
+
 @media screen and (max-width: 600px) {
     * {
         font-size: 0.9rem;
+    }
+
+    .primary-button:active {
+        background-color: var(--color-accent);
     }
 
     ::-webkit-scrollbar {
