@@ -25,28 +25,23 @@ html {
     --container-width-md: 90%;
 }
 
-/* Style the scrollbar track */
 ::-webkit-scrollbar {
     width: 10px; /* width of the scrollbar */
     border-radius: 3px; /* round the corners of the thumb */
 }
 
-/* Style the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
     background-color: var(--color-grey-dark); /* color of the thumb */
 }
 
-/* Style the scrollbar thumb when hovered */
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--color-accent); /* color of the thumb on hover */
 }
 
-/* Style the scrollbar track when hovered */
 ::-webkit-scrollbar-track {
     background-color: var(--color-grey); /* color of the track */
 }
 
-/* Style the scrollbar track when the thumb is being dragged */
 ::-webkit-scrollbar-thumb:active {
     background-color: var(--color-accent); /* color of the thumb when active */
 }
