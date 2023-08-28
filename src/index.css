@@ -97,6 +97,10 @@ body {
     * {
         font-size: 0.9rem;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 384px) {
