@@ -22,7 +22,7 @@ const Directives = () => {
     " Smart devices typically use lockscreen passwords as an encryption method. Computers and storage drives should also be encrypted separately.",
     " Copying and pasting passwords can store the information in keyboard clipboards, which could become problematic if forgotten.",
     " The use of a password manager to securely store passwords is highly advised.",
-    " Browser-embedded password managers are not secure whatsoever and should be avoided at all costs. They are best deactivated altogether.",
+    " Browser-embedded password managers are typically not very secure, lack important features, and are not recommended.",
     " Browsing the web and using passwords on others' devices could potentially store them in their browser's embedded password manager and expose them to other users of the device.",
     " Logging into critical accounts when connected to public Wi-Fi hotspots, Tor, free VPNs, or web proxies can potentially compromise passwords to hackers.",
     " Unencrypted connections such as HTTP, FTP, Telnet etc are dangerous as they can compromise information. Encrypted connections such as HTTPS, SFTP, FTPS, SMTPS etc are preferable.",
